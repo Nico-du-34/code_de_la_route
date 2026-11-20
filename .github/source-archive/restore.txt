@@ -1,1 +1,1 @@
-Relancer la restauration après correction des imports ESLint.
+Relancer la restauration avec la configuration ESLint compatible.
