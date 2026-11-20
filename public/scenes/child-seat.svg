@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Sécurité d’un enfant</title><desc id="desc">Un dispositif de retenue adapté et correctement installé protège l’enfant ; vérifie les consignes de l’airbag.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5f7f4"/><stop offset="1" stop-color="#e8eee8"/></linearGradient>
+ <pattern id="dash" width="54" height="12" patternUnits="userSpaceOnUse"><rect width="28" height="5" y="3.5" rx="2.5" fill="#f8fafc" opacity=".92"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0f172a" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1000" height="560" rx="28" fill="url(#bg)"/>
+<rect x="42" y="34" width="916" height="492" rx="22" fill="#dce8dc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <rect x="66" y="58" width="230" height="32" rx="16" fill="#172b25"/><text x="181" y="80" fill="white" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5">SCHÉMA PÉDAGOGIQUE</text>
+ <text x="66" y="132" fill="#172b25" font-size="30" font-weight="800">Sécurité d’un enfant</text>
+ 
+ <rect x="145" y="210" width="710" height="235" rx="75" fill="#344454" stroke="#172b25" stroke-width="5"/>
+ <rect x="215" y="245" width="570" height="150" rx="35" fill="#d7e9f0"/>
+ <rect x="280" y="270" width="150" height="115" rx="28" fill="#1e293b"/><rect x="305" y="285" width="102" height="87" rx="24" fill="#f59e0b"/>
+ <circle cx="355" cy="308" r="21" fill="#d8a17c"/><path d="M355 332 L355 366 M355 342 L325 360 M355 342 L385 360" stroke="#d8a17c" stroke-width="12" stroke-linecap="round"/>
+ <path d="M455 255 L610 390 M610 255 L455 390" stroke="#dc2626" stroke-width="10" opacity=".75"/>
+ <rect x="490" y="150" width="330" height="48" rx="12" fill="#fff"/><text x="655" y="181" font-size="18" font-weight="700" fill="#172b25" text-anchor="middle">Airbag passager désactivé si requis</text>
+ <text x="66" y="492" fill="#52635b" font-size="16">Un dispositif de retenue adapté et correctement installé protège l’enfant ; vérifie les consignes de l’airbag.</text>
+</g></svg>

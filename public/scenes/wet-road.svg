@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Pluie et adhérence</title><desc id="desc">Réduis ton allure, augmente les distances et évite les gestes brusques sur chaussée mouillée.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5f7f4"/><stop offset="1" stop-color="#e8eee8"/></linearGradient>
+ <pattern id="dash" width="54" height="12" patternUnits="userSpaceOnUse"><rect width="28" height="5" y="3.5" rx="2.5" fill="#f8fafc" opacity=".92"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0f172a" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1000" height="560" rx="28" fill="url(#bg)"/>
+<rect x="42" y="34" width="916" height="492" rx="22" fill="#dce8dc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <rect x="66" y="58" width="230" height="32" rx="16" fill="#172b25"/><text x="181" y="80" fill="white" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5">SCHÉMA PÉDAGOGIQUE</text>
+ <text x="66" y="132" fill="#172b25" font-size="30" font-weight="800">Pluie et adhérence</text>
+ 
+ <rect x="95" y="205" width="810" height="215" rx="5" fill="#566579"/><path d="M95 310 H905" stroke="#fff" stroke-width="7" stroke-dasharray="34 28"/>
+ <g transform="translate(390 310) rotate(90) scale(0.82)" filter="url(#shadow)">
+ <rect x="-32" y="-59" width="64" height="118" rx="18" fill="#2563eb" stroke="#17212b" stroke-width="3"/>
+ <rect x="-24" y="-27" width="48" height="43" rx="9" fill="#cbe2ee" stroke="#35536a" stroke-width="2"/>
+ <rect x="-23" y="23" width="46" height="19" rx="6" fill="#93b6c8"/>
+ <rect x="-38" y="-39" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="-39" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-38" y="25" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="25" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-22" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/><rect x="10" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/>
+ <rect x="-22" y="51" width="12" height="5" rx="2" fill="#fb7185"/><rect x="10" y="51" width="12" height="5" rx="2" fill="#fb7185"/>
+ </g>
+ <g stroke="#60a5fa" stroke-width="7" stroke-linecap="round"><path d="M170 155 l-12 30 M230 145 l-12 30 M800 150 l-12 30 M855 160 l-12 30 M730 190 l-12 30"/></g>
+ <path d="M470 210 C500 190 540 190 570 210" stroke="#7dd3fc" stroke-width="5" fill="none" stroke-dasharray="8 8"/>
+ <rect x="625" y="145" width="250" height="46" rx="12" fill="#fff"/><text x="750" y="175" font-size="18" font-weight="700" fill="#172b25" text-anchor="middle">Distance augmentée</text>
+ <path d="M300 390 Q390 430 480 390" stroke="#7dd3fc" stroke-width="5" fill="none"/>
+ <text x="66" y="492" fill="#52635b" font-size="16">Réduis ton allure, augmente les distances et évite les gestes brusques sur chaussée mouillée.</text>
+</g></svg>

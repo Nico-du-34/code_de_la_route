@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Circulation dans un tunnel</title><desc id="desc">Allume les feux adaptés, respecte les distances et ne fais jamais demi-tour ni marche arrière.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5f7f4"/><stop offset="1" stop-color="#e8eee8"/></linearGradient>
+ <pattern id="dash" width="54" height="12" patternUnits="userSpaceOnUse"><rect width="28" height="5" y="3.5" rx="2.5" fill="#f8fafc" opacity=".92"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0f172a" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1000" height="560" rx="28" fill="url(#bg)"/>
+<rect x="42" y="34" width="916" height="492" rx="22" fill="#dce8dc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <rect x="66" y="58" width="230" height="32" rx="16" fill="#172b25"/><text x="181" y="80" fill="white" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5">SCHÉMA PÉDAGOGIQUE</text>
+ <text x="66" y="132" fill="#172b25" font-size="30" font-weight="800">Circulation dans un tunnel</text>
+ 
+ <path d="M105 430 V330 C105 190 260 145 500 145 C740 145 895 190 895 330 V430 Z" fill="#4b5563"/>
+ <path d="M130 430 V340 C130 220 275 178 500 178 C725 178 870 220 870 340 V430" stroke="#9ca3af" stroke-width="8" fill="none"/>
+ <path d="M160 360 H840" stroke="#fff" stroke-width="7" stroke-dasharray="35 28"/>
+ <g transform="translate(420 355) rotate(90) scale(0.7)" filter="url(#shadow)">
+ <rect x="-32" y="-59" width="64" height="118" rx="18" fill="#2563eb" stroke="#17212b" stroke-width="3"/>
+ <rect x="-24" y="-27" width="48" height="43" rx="9" fill="#cbe2ee" stroke="#35536a" stroke-width="2"/>
+ <rect x="-23" y="23" width="46" height="19" rx="6" fill="#93b6c8"/>
+ <rect x="-38" y="-39" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="-39" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-38" y="25" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="25" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-22" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/><rect x="10" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/>
+ <rect x="-22" y="51" width="12" height="5" rx="2" fill="#fb7185"/><rect x="10" y="51" width="12" height="5" rx="2" fill="#fb7185"/>
+ </g><g transform="translate(660 355) rotate(90) scale(0.7)" filter="url(#shadow)">
+ <rect x="-32" y="-59" width="64" height="118" rx="18" fill="#d97706" stroke="#17212b" stroke-width="3"/>
+ <rect x="-24" y="-27" width="48" height="43" rx="9" fill="#cbe2ee" stroke="#35536a" stroke-width="2"/>
+ <rect x="-23" y="23" width="46" height="19" rx="6" fill="#93b6c8"/>
+ <rect x="-38" y="-39" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="-39" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-38" y="25" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="25" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-22" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/><rect x="10" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/>
+ <rect x="-22" y="51" width="12" height="5" rx="2" fill="#fb7185"/><rect x="10" y="51" width="12" height="5" rx="2" fill="#fb7185"/>
+ </g>
+ <g fill="#facc15"><circle cx="250" cy="230" r="9"/><circle cx="390" cy="198" r="9"/><circle cx="610" cy="198" r="9"/><circle cx="750" cy="230" r="9"/></g>
+ <rect x="660" y="110" width="210" height="45" rx="12" fill="#fff"/><text x="765" y="140" font-size="18" font-weight="700" fill="#172b25" text-anchor="middle">Je garde mes distances</text>
+ <text x="66" y="492" fill="#52635b" font-size="16">Allume les feux adaptés, respecte les distances et ne fais jamais demi-tour ni marche arrière.</text>
+</g></svg>

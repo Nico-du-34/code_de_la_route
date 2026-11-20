@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Feux tricolores</title><desc id="desc">Le feu commande le passage, mais un carrefour doit rester dégagé.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5f7f4"/><stop offset="1" stop-color="#e8eee8"/></linearGradient>
+ <pattern id="dash" width="54" height="12" patternUnits="userSpaceOnUse"><rect width="28" height="5" y="3.5" rx="2.5" fill="#f8fafc" opacity=".92"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0f172a" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1000" height="560" rx="28" fill="url(#bg)"/>
+<rect x="42" y="34" width="916" height="492" rx="22" fill="#dce8dc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <rect x="66" y="58" width="230" height="32" rx="16" fill="#172b25"/><text x="181" y="80" fill="white" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5">SCHÉMA PÉDAGOGIQUE</text>
+ <text x="66" y="132" fill="#172b25" font-size="30" font-weight="800">Feux tricolores</text>
+ 
+ <rect x="110" y="230" width="780" height="180" fill="#4b5563"/><rect x="400" y="150" width="200" height="305" fill="#4b5563"/>
+ <path d="M110 320 H400 M600 320 H890" stroke="#fff" stroke-width="7" stroke-dasharray="35 23"/>
+ <g transform="translate(490 385) rotate(0) scale(0.75)" filter="url(#shadow)">
+ <rect x="-32" y="-59" width="64" height="118" rx="18" fill="#2563eb" stroke="#17212b" stroke-width="3"/>
+ <rect x="-24" y="-27" width="48" height="43" rx="9" fill="#cbe2ee" stroke="#35536a" stroke-width="2"/>
+ <rect x="-23" y="23" width="46" height="19" rx="6" fill="#93b6c8"/>
+ <rect x="-38" y="-39" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="-39" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-38" y="25" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="25" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-22" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/><rect x="10" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/>
+ <rect x="-22" y="51" width="12" height="5" rx="2" fill="#fb7185"/><rect x="10" y="51" width="12" height="5" rx="2" fill="#fb7185"/>
+ </g>
+ <rect x="650" y="140" width="86" height="220" rx="20" fill="#202a33" stroke="#fff" stroke-width="5"/>
+ <circle cx="693" cy="181" r="23" fill="#ef4444"/><circle cx="693" cy="250" r="23" fill="#facc15"/><circle cx="693" cy="319" r="23" fill="#22c55e" opacity=".28"/>
+ <path d="M490 292 L490 235" stroke="#facc15" stroke-width="8" stroke-linecap="round"/><path d="M490 235 L472 254 M490 235 L508 254" stroke="#facc15" stroke-width="8" fill="none" stroke-linecap="round"/>
+ <rect x="120" y="162" width="210" height="46" rx="12" fill="#fff"/><text x="225" y="192" font-size="18" font-weight="700" fill="#172b25" text-anchor="middle">Observer la file</text>
+ <text x="66" y="492" fill="#52635b" font-size="16">Le feu commande le passage, mais un carrefour doit rester dégagé.</text>
+</g></svg>

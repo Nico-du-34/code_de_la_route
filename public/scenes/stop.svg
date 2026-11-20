@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Arrêt au STOP</title><desc id="desc">Arrêt complet à la ligne d’effet, puis contrôle avant de s’engager.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5f7f4"/><stop offset="1" stop-color="#e8eee8"/></linearGradient>
+ <pattern id="dash" width="54" height="12" patternUnits="userSpaceOnUse"><rect width="28" height="5" y="3.5" rx="2.5" fill="#f8fafc" opacity=".92"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0f172a" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1000" height="560" rx="28" fill="url(#bg)"/>
+<rect x="42" y="34" width="916" height="492" rx="22" fill="#dce8dc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <rect x="66" y="58" width="230" height="32" rx="16" fill="#172b25"/><text x="181" y="80" fill="white" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5">SCHÉMA PÉDAGOGIQUE</text>
+ <text x="66" y="132" fill="#172b25" font-size="30" font-weight="800">Arrêt au STOP</text>
+ 
+ <rect x="120" y="225" width="760" height="170" fill="#4b5563"/><rect x="400" y="145" width="200" height="310" fill="#4b5563"/>
+ <path d="M410 235 H590" stroke="#fff" stroke-width="12"/>
+ <g transform="translate(500 375) rotate(0) scale(0.78)" filter="url(#shadow)">
+ <rect x="-32" y="-59" width="64" height="118" rx="18" fill="#2563eb" stroke="#17212b" stroke-width="3"/>
+ <rect x="-24" y="-27" width="48" height="43" rx="9" fill="#cbe2ee" stroke="#35536a" stroke-width="2"/>
+ <rect x="-23" y="23" width="46" height="19" rx="6" fill="#93b6c8"/>
+ <rect x="-38" y="-39" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="-39" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-38" y="25" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="25" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-22" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/><rect x="10" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/>
+ <rect x="-22" y="51" width="12" height="5" rx="2" fill="#fb7185"/><rect x="10" y="51" width="12" height="5" rx="2" fill="#fb7185"/>
+ </g>
+ <polygon points="300,175 332,156 368,156 400,175 400,211 368,230 332,230 300,211" fill="#dc2626" stroke="white" stroke-width="7"/>
+ <text x="350" y="202" font-size="24" font-weight="900" fill="white" text-anchor="middle">STOP</text>
+ <path d="M500 300 L500 252 M500 252 L484 270 M500 252 L516 270" stroke="#facc15" stroke-width="8" fill="none" stroke-linecap="round"/>
+ <rect x="630" y="165" width="220" height="44" rx="12" fill="#fff"/><text x="740" y="194" font-size="18" fill="#172b25" text-anchor="middle" font-weight="700">Arrêt obligatoire</text>
+ <text x="66" y="492" fill="#52635b" font-size="16">Arrêt complet à la ligne d’effet, puis contrôle avant de s’engager.</text>
+</g></svg>

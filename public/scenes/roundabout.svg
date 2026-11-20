@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Carrefour à sens giratoire</title><desc id="desc">À l’entrée, respecte le cédez-le-passage et contrôle les véhicules déjà engagés.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5f7f4"/><stop offset="1" stop-color="#e8eee8"/></linearGradient>
+ <pattern id="dash" width="54" height="12" patternUnits="userSpaceOnUse"><rect width="28" height="5" y="3.5" rx="2.5" fill="#f8fafc" opacity=".92"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0f172a" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1000" height="560" rx="28" fill="url(#bg)"/>
+<rect x="42" y="34" width="916" height="492" rx="22" fill="#dce8dc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <rect x="66" y="58" width="230" height="32" rx="16" fill="#172b25"/><text x="181" y="80" fill="white" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5">SCHÉMA PÉDAGOGIQUE</text>
+ <text x="66" y="132" fill="#172b25" font-size="30" font-weight="800">Carrefour à sens giratoire</text>
+ 
+ <circle cx="500" cy="310" r="180" fill="#4b5563"/><circle cx="500" cy="310" r="105" fill="#93bd8f" stroke="#fff" stroke-width="6"/><circle cx="500" cy="310" r="139" fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="25 18"/>
+ <rect x="90" y="258" width="250" height="105" fill="#4b5563"/><rect x="660" y="258" width="250" height="105" fill="#4b5563"/>
+ <rect x="455" y="130" width="90" height="180" fill="#4b5563"/><rect x="455" y="310" width="90" height="155" fill="#4b5563"/>
+ <g transform="translate(350 310) rotate(90) scale(0.75)" filter="url(#shadow)">
+ <rect x="-32" y="-59" width="64" height="118" rx="18" fill="#2563eb" stroke="#17212b" stroke-width="3"/>
+ <rect x="-24" y="-27" width="48" height="43" rx="9" fill="#cbe2ee" stroke="#35536a" stroke-width="2"/>
+ <rect x="-23" y="23" width="46" height="19" rx="6" fill="#93b6c8"/>
+ <rect x="-38" y="-39" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="-39" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-38" y="25" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="25" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-22" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/><rect x="10" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/>
+ <rect x="-22" y="51" width="12" height="5" rx="2" fill="#fb7185"/><rect x="10" y="51" width="12" height="5" rx="2" fill="#fb7185"/>
+ </g><g transform="translate(500 128) rotate(180) scale(0.65)" filter="url(#shadow)">
+ <rect x="-32" y="-59" width="64" height="118" rx="18" fill="#d97706" stroke="#17212b" stroke-width="3"/>
+ <rect x="-24" y="-27" width="48" height="43" rx="9" fill="#cbe2ee" stroke="#35536a" stroke-width="2"/>
+ <rect x="-23" y="23" width="46" height="19" rx="6" fill="#93b6c8"/>
+ <rect x="-38" y="-39" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="-39" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-38" y="25" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="25" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-22" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/><rect x="10" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/>
+ <rect x="-22" y="51" width="12" height="5" rx="2" fill="#fb7185"/><rect x="10" y="51" width="12" height="5" rx="2" fill="#fb7185"/>
+ </g><g transform="translate(625 310) rotate(270) scale(0.62)" filter="url(#shadow)">
+ <rect x="-32" y="-59" width="64" height="118" rx="18" fill="#16a34a" stroke="#17212b" stroke-width="3"/>
+ <rect x="-24" y="-27" width="48" height="43" rx="9" fill="#cbe2ee" stroke="#35536a" stroke-width="2"/>
+ <rect x="-23" y="23" width="46" height="19" rx="6" fill="#93b6c8"/>
+ <rect x="-38" y="-39" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="-39" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-38" y="25" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="25" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-22" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/><rect x="10" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/>
+ <rect x="-22" y="51" width="12" height="5" rx="2" fill="#fb7185"/><rect x="10" y="51" width="12" height="5" rx="2" fill="#fb7185"/>
+ </g>
+ <path d="M360 380 L420 380 M420 380 L402 363 M420 380 L402 397" stroke="#facc15" stroke-width="8" fill="none" stroke-linecap="round"/>
+ <rect x="100" y="140" width="230" height="48" rx="12" fill="#fff"/><text x="215" y="171" font-size="18" font-weight="700" fill="#172b25" text-anchor="middle">Je contrôle à gauche</text>
+ <text x="66" y="492" fill="#52635b" font-size="16">À l’entrée, respecte le cédez-le-passage et contrôle les véhicules déjà engagés.</text>
+</g></svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Ceinture et objets transportés</title><desc id="desc">Attache les passagers et arrime les objets : un objet non fixé devient un projectile au freinage.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5f7f4"/><stop offset="1" stop-color="#e8eee8"/></linearGradient>
+ <pattern id="dash" width="54" height="12" patternUnits="userSpaceOnUse"><rect width="28" height="5" y="3.5" rx="2.5" fill="#f8fafc" opacity=".92"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0f172a" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1000" height="560" rx="28" fill="url(#bg)"/>
+<rect x="42" y="34" width="916" height="492" rx="22" fill="#dce8dc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <rect x="66" y="58" width="230" height="32" rx="16" fill="#172b25"/><text x="181" y="80" fill="white" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5">SCHÉMA PÉDAGOGIQUE</text>
+ <text x="66" y="132" fill="#172b25" font-size="30" font-weight="800">Ceinture et objets transportés</text>
+ 
+ <rect x="140" y="180" width="720" height="275" rx="55" fill="#344454" stroke="#172b25" stroke-width="5"/>
+ <rect x="220" y="225" width="560" height="185" rx="35" fill="#d7e9f0"/>
+ <path d="M315 245 L455 390 M455 245 L315 390" stroke="#facc15" stroke-width="17" stroke-linecap="round"/>
+ <path d="M580 245 L710 390 M710 245 L580 390" stroke="#facc15" stroke-width="17" stroke-linecap="round"/>
+ <rect x="590" y="260" width="105" height="76" rx="12" fill="#c08457" stroke="#7c4a2d" stroke-width="5"/><path d="M590 298 H695" stroke="#7c4a2d" stroke-width="4"/>
+ <path d="M740 240 L800 170" stroke="#dc2626" stroke-width="7" stroke-linecap="round"/><path d="M800 170 L775 178 M800 170 L795 196" stroke="#dc2626" stroke-width="7" fill="none"/>
+ <rect x="295" y="440" width="410" height="46" rx="12" fill="#fff"/><text x="500" y="470" font-size="18" font-weight="700" fill="#172b25" text-anchor="middle">Ceintures bouclées · bagages fixés</text>
+ <text x="66" y="492" fill="#52635b" font-size="16">Attache les passagers et arrime les objets : un objet non fixé devient un projectile au freinage.</text>
+</g></svg>

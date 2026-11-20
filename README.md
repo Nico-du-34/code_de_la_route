@@ -29,6 +29,10 @@ npm run build
 - **62 sections de cours** structurées avec explications, règles pratiques, exemples de vigilance et rappels.
 - **180 questions originales** à choix simple ou multiple, réparties sur les dix thèmes.
 - **64 fiches de signalisation** schématiques, classées par famille avec recherche et filtres.
+- **16 schémas de situations routières originaux** (priorités, STOP, feux, piétons, cyclistes, angles morts, autoroute, pluie, tunnel, secours, sièges enfants, véhicule, chargement et ouverture de portière).
+- **Visuels intégrés aux questions** pour illustrer les situations et guider l'observation.
+- **6 vidéos pédagogiques intégrées** depuis la chaîne YouTube « Mon auto-école à la maison », avec indication de leur date de publication.
+- Accès direct au module officiel « Je repasse le code » de la Sécurité routière, qui utilise des photos et vidéos de la base officielle.
 - Entraînement aléatoire, par thème, erreurs, favoris et questions non maîtrisées.
 - Examens blancs de **40 questions**, répartis sur les thèmes disponibles, avec un seuil indicatif de réussite de **35/40**.
 - Correction détaillée après chaque examen et historique des résultats.
@@ -49,7 +53,7 @@ Sources de référence :
 - [Sécurité routière — réglementation des jeunes conducteurs](https://validation.securite-routiere.gouv.fr/reglementation-liee-lusager/reglementation-pour-les-jeunes-conducteurs)
 - [Service-Public — preuve de l'assurance automobile](https://www.service-public.fr/particuliers/vosdroits/F1362)
 
-Les questions de cette application sont **originales et pédagogiques** : elles ne reproduisent pas la banque officielle ETG. Les fiches de panneaux sont des schémas simplifiés et non des planches réglementaires officielles. L'application aide à apprendre et à s'entraîner ; elle ne garantit pas la réussite à l'examen.
+Les questions de cette application sont **originales et pédagogiques** : elles ne reproduisent pas la banque officielle ETG. Les panneaux et schémas de situations sont des illustrations originales simplifiées, pas des prises de vue d'examen ni des planches réglementaires officielles. Les vidéos intégrées sont hébergées par YouTube et sélectionnées pour leur intérêt pédagogique ; certaines datent de 2020. Le module officiel « Je repasse le code » est le support recommandé pour s'exercer sur les photos et vidéos de la Sécurité routière. L'application aide à apprendre et à s'entraîner ; elle ne garantit pas la réussite à l'examen.
 
 ## Données personnelles
 

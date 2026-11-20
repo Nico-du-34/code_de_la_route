@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">Dépassement d’un cycliste</title><desc id="desc">Respecte l’écart latéral minimal : 1 m en agglomération, 1,5 m hors agglomération.</desc>
+<defs>
+ <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5f7f4"/><stop offset="1" stop-color="#e8eee8"/></linearGradient>
+ <pattern id="dash" width="54" height="12" patternUnits="userSpaceOnUse"><rect width="28" height="5" y="3.5" rx="2.5" fill="#f8fafc" opacity=".92"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#0f172a" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1000" height="560" rx="28" fill="url(#bg)"/>
+<rect x="42" y="34" width="916" height="492" rx="22" fill="#dce8dc"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <rect x="66" y="58" width="230" height="32" rx="16" fill="#172b25"/><text x="181" y="80" fill="white" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5">SCHÉMA PÉDAGOGIQUE</text>
+ <text x="66" y="132" fill="#172b25" font-size="30" font-weight="800">Dépassement d’un cycliste</text>
+ 
+ <rect x="95" y="210" width="810" height="200" fill="#4b5563"/><path d="M95 310 H905" stroke="#fff" stroke-width="7" stroke-dasharray="34 28"/>
+ <g transform="translate(340 310) rotate(90) scale(0.75)" filter="url(#shadow)">
+ <rect x="-32" y="-59" width="64" height="118" rx="18" fill="#2563eb" stroke="#17212b" stroke-width="3"/>
+ <rect x="-24" y="-27" width="48" height="43" rx="9" fill="#cbe2ee" stroke="#35536a" stroke-width="2"/>
+ <rect x="-23" y="23" width="46" height="19" rx="6" fill="#93b6c8"/>
+ <rect x="-38" y="-39" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="-39" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-38" y="25" width="9" height="27" rx="4" fill="#17212b"/><rect x="29" y="25" width="9" height="27" rx="4" fill="#17212b"/>
+ <rect x="-22" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/><rect x="10" y="-56" width="12" height="5" rx="2" fill="#fff3c4"/>
+ <rect x="-22" y="51" width="12" height="5" rx="2" fill="#fb7185"/><rect x="10" y="51" width="12" height="5" rx="2" fill="#fb7185"/>
+ </g><g transform="translate(650 305) scale(0.78)" stroke="#0f766e" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <circle cx="-35" cy="22" r="27" stroke="#263238" stroke-width="5"/><circle cx="42" cy="22" r="27" stroke="#263238" stroke-width="5"/>
+ <path d="M-35 22 L-9 -18 L13 22 L-35 22 M-9 -18 L42 22 M-9 -18 L13 -18" />
+ <circle cx="-9" cy="-36" r="10" fill="#eab99a" stroke="none"/><path d="M-9 -25 L3 -2 L-8 9 M3 -2 L21 -8" stroke="#eab99a" stroke-width="10"/>
+ </g>
+ <path d="M400 225 H600" stroke="#facc15" stroke-width="8" stroke-linecap="round"/><path d="M400 225 L420 208 M400 225 L420 242 M600 225 L580 208 M600 225 L580 242" stroke="#facc15" stroke-width="8" fill="none" stroke-linecap="round"/>
+ <rect x="465" y="150" width="230" height="48" rx="12" fill="#fff"/><text x="580" y="181" font-size="18" font-weight="700" fill="#172b25" text-anchor="middle">Écart latéral</text>
+ <rect x="115" y="405" width="390" height="45" rx="12" fill="#fff"/><text x="310" y="434" font-size="18" font-weight="700" fill="#172b25" text-anchor="middle">Je dépasse seulement si c’est sûr</text>
+ <text x="66" y="492" fill="#52635b" font-size="16">Respecte l’écart latéral minimal : 1 m en agglomération, 1,5 m hors agglomération.</text>
+</g></svg>
