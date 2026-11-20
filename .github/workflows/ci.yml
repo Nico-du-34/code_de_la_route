@@ -1,0 +1,35 @@
+name: Vérification du projet
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Vérifier TypeScript
+        run: npm run typecheck
+
+      - name: Vérifier ESLint
+        run: npm run lint
+
+      - name: Construire en production
+        run: npm run build
