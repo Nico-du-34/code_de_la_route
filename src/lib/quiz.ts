@@ -17,48 +17,52 @@ export function isCorrect(question: Question, selected: number[]): boolean {
   return a.every((value, index) => value === b[index]);
 }
 
-/**
- * Builds a balanced mock exam: the round-robin selection spreads questions
- * across available themes before taking a second question from any theme.
- */
+/** Quotas de référence publiés par Ornikar pour une série de 40 questions. */
+export const EXAM_BLUEPRINT = [
+  { theme: 'conducteur', count: 10 },
+  { theme: 'usagers', count: 5 },
+  { theme: 'circulation', count: 4 },
+  { theme: 'route', count: 4 },
+  { theme: 'mecanique', count: 4 },
+  { theme: 'notions-diverses', count: 3 },
+  { theme: 'prendre-quitter-vehicule', count: 3 },
+  { theme: 'securite', count: 3 },
+  { theme: 'environnement', count: 3 },
+  { theme: 'premiers-secours', count: 1 },
+] as const;
+
 export function makeExam(pool: Question[], count = 40): Question[] {
   const unique = Array.from(new Map(pool.map((q) => [q.id, q])).values());
-  if (unique.length < count) {
-    throw new Error(`Il faut au moins ${count} questions différentes.`);
+  if (unique.length < count) throw new Error(`Il faut au moins ${count} questions différentes.`);
+  if (count === 40) {
+    const selected: Question[] = [];
+    for (const quota of EXAM_BLUEPRINT) {
+      const available = shuffle(unique.filter((question) => question.theme === quota.theme));
+      if (available.length < quota.count) {
+        throw new Error(`Banque insuffisante pour « ${quota.theme} » : ${available.length}/${quota.count}.`);
+      }
+      selected.push(...available.slice(0, quota.count));
+    }
+    return shuffle(selected);
   }
-
-  const grouped = new Map<string, Question[]>();
-  for (const question of unique) {
-    const group = grouped.get(question.theme) ?? [];
+  const groups = shuffle(Array.from(unique.reduce((map, question) => {
+    const group = map.get(question.theme) ?? [];
     group.push(question);
-    grouped.set(question.theme, group);
-  }
-
-  const groups = shuffle(
-    Array.from(grouped.entries()).map(([theme, questions]) => ({
-      theme,
-      questions: shuffle(questions),
-      cursor: 0,
-    })),
-  );
+    map.set(question.theme, group);
+    return map;
+  }, new Map<string, Question[]>()).entries()).map(([theme, questions]) => ({
+    theme, questions: shuffle(questions), cursor: 0,
+  })));
   const selected: Question[] = [];
-
   while (selected.length < count) {
-    let addedThisRound = false;
+    let added = false;
     for (const group of groups) {
       if (selected.length >= count) break;
       const next = group.questions[group.cursor];
-      if (next) {
-        selected.push(next);
-        group.cursor += 1;
-        addedThisRound = true;
-      }
+      if (next) { selected.push(next); group.cursor += 1; added = true; }
     }
-    if (!addedThisRound) break;
+    if (!added) break;
   }
-
-  if (selected.length !== count) {
-    throw new Error('La banque ne contient pas assez de questions réparties entre les thèmes.');
-  }
+  if (selected.length !== count) throw new Error('La banque ne contient pas assez de questions différentes.');
   return shuffle(selected);
 }

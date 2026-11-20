@@ -25,7 +25,7 @@ npm run build
 
 ## Programme pédagogique
 
-- **10 grands thèmes** correspondant aux principaux domaines de l'ETG.
+- **10 thèmes officiels** : circulation, conducteur, route, autres usagers, notions diverses, premiers secours, prendre/quitter son véhicule, mécanique, sécurité du passager et du véhicule, environnement.
 - **62 sections de cours** structurées avec explications, règles pratiques, exemples de vigilance et rappels.
 - **180 questions originales** à choix simple ou multiple, réparties sur les dix thèmes.
 - **64 fiches de signalisation** schématiques, classées par famille avec recherche et filtres.
@@ -34,7 +34,7 @@ npm run build
 - **6 vidéos pédagogiques intégrées** depuis la chaîne YouTube « Mon auto-école à la maison », avec indication de leur date de publication.
 - Accès direct au module officiel « Je repasse le code » de la Sécurité routière, qui utilise des photos et vidéos de la base officielle.
 - Entraînement aléatoire, par thème, erreurs, favoris et questions non maîtrisées.
-- Examens blancs de **40 questions**, répartis sur les thèmes disponibles, avec un seuil indicatif de réussite de **35/40**.
+- Examens blancs de **40 questions**, chronométrés à **20 secondes par question**, avec une répartition thématique de référence publiée par Ornikar et un seuil de réussite de **35/40**. Les questions restent originales et ne reproduisent pas la banque d'un éditeur.
 - Correction détaillée après chaque examen et historique des résultats.
 - Suivi des cours étudiés, des notions maîtrisées, de l'objectif quotidien et des statistiques.
 - Import/export JSON de la progression locale.

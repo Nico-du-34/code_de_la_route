@@ -261,8 +261,8 @@ export const lessons: Lesson[] = [
     source: 'Code de la route, notamment R412-6, R414-4 et R415-11 ; Observatoire national interministériel de la sécurité routière : https://www.onisr.securite-routiere.gouv.fr/'
   },
   {
-    id: 'reglementation',
-    title: 'Réglementation et permis B',
+    id: 'notions-diverses',
+    title: 'Notions diverses',
     intro: 'Cette leçon rassemble les règles administratives et les obligations essentielles du conducteur. Les catégories, restrictions et textes peuvent évoluer : les sources officielles priment toujours.',
     sections: [
       { heading: 'L’épreuve théorique générale (ETG)', body: 'L’examen du code est une épreuve de connaissances et d’analyse de situations. Il faut comprendre la scène, distinguer les informations utiles et appliquer la règle adaptée.', points: [
@@ -555,63 +555,66 @@ export const lessons: Lesson[] = [
     source: 'Sécurité routière et collectivités locales ; vérifier les règles ZFE sur le site officiel de la collectivité avant tout déplacement.'
   },
   {
-    id: 'divers',
-    title: 'Situations particulières et notions diverses',
-    intro: 'Cette partie rassemble les situations transversales qui demandent une lecture précise de l’environnement : signalisation temporaire, panne, documents, partage de la chaussée et manœuvres peu fréquentes.',
+    id: 'prendre-quitter-vehicule',
+    title: 'Prendre et quitter son véhicule',
+    intro: 'La sécurité commence avant même de démarrer. Il faut préparer le véhicule, installer correctement les occupants, contrôler son environnement, effectuer les manœuvres avec méthode et quitter le véhicule sans créer de danger.',
     sections: [
-      { heading: 'Marquages au sol et signalisation temporaire', body: 'Les lignes, flèches et inscriptions au sol guident le positionnement et les mouvements. En présence de travaux, la signalisation provisoire peut modifier le régime habituel.', points: [
-        'Une ligne continue ne doit pas être franchie ou chevauchée, sauf exceptions prévues par les textes.',
-        'Une ligne discontinue peut être franchie si la manœuvre est autorisée et sans danger.',
-        'Les flèches directionnelles indiquent les directions possibles depuis la voie ; place-toi avant la zone de sélection.',
-        'Les zébras et voies neutralisées ne sont pas des voies de circulation ordinaires.',
-        'La signalisation temporaire de chantier doit être respectée ; adapte ta vitesse et garde une marge avec les agents et ouvriers.',
-        'Les indications données par un agent sur un chantier commandent la circulation dans les conditions prévues.'
+      { heading: 'S’installer correctement au poste de conduite', body: 'Un poste de conduite bien réglé améliore la visibilité, la précision des commandes et la capacité à réagir. Effectue les réglages avant de mettre le véhicule en mouvement.', points: [
+        'Règle la distance du siège pour enfoncer les pédales sans tendre complètement les jambes et garder le contrôle du volant.',
+        'Ajuste le dossier pour tenir le volant bras légèrement fléchis et conserver une posture stable.',
+        'Règle l’appuie-tête à la bonne hauteur, proche de l’arrière de la tête, pour limiter les blessures cervicales en cas de choc.',
+        'Ajuste les rétroviseurs intérieur et extérieurs pour réduire les angles morts sans devoir quitter la route des yeux.',
+        'Boucle ta ceinture et vérifie qu’elle est correctement positionnée : sangle ventrale basse sur le bassin, sangle diagonale sur l’épaule.',
+        'Retire ou fixe tout objet qui pourrait gêner les pédales, le volant ou les mouvements du conducteur.'
       ]},
-      { heading: 'Passages à niveau et ponts mobiles', body: 'Un passage à niveau croise une voie ferrée. Un véhicule immobilisé sur les rails expose ses occupants et les passagers du train à un danger extrême.', points: [
-        'Ne t’engage que si tu peux traverser entièrement et immédiatement.',
-        'Arrête-toi dès que les signaux lumineux l’imposent ou que les barrières se ferment.',
-        'Ne contourne jamais une demi-barrière et ne tente pas de passer après le déclenchement des signaux.',
-        'En cas d’immobilisation sur les voies, évacue les personnes si cela peut être fait sans danger et alerte immédiatement selon les dispositifs présents.',
-        'Respecte les limitations et feux spécifiques aux ponts mobiles et ouvrages à ouverture.'
+      { heading: 'Contrôler le véhicule avant de partir', body: 'Un contrôle rapide autour du véhicule permet de repérer un danger, une fuite, un obstacle ou une anomalie avant de s’insérer dans la circulation.', points: [
+        'Vérifie que les vitres, rétroviseurs, feux et plaques sont propres et dégagés.',
+        'Observe les pneus : pression, coupure visible, déformation ou objet planté dans la bande de roulement.',
+        'Contrôle que les feux nécessaires fonctionnent et que les voyants au tableau de bord ne signalent pas une anomalie grave.',
+        'Assure-toi que toutes les portes et le coffre sont fermés.',
+        'Vérifie que les passagers sont installés et attachés avant de démarrer.',
+        'Ne pars pas si un défaut compromet la sécurité ; consulte la notice du véhicule ou fais contrôler le véhicule.'
       ]},
-      { heading: 'Transport, chargement et remorque', body: 'Le conducteur doit s’assurer que le véhicule et son chargement restent dans les limites autorisées et ne compromettent pas la visibilité ou la stabilité.', points: [
-        'Respecte les dimensions et masses maximales autorisées du véhicule et de l’ensemble attelé.',
-        'Arrime les objets, protège ce qui peut tomber et répartis correctement la charge.',
-        'Ne masque pas les feux, la plaque d’immatriculation ni la visibilité vers l’arrière.',
-        'Vérifie la fixation de la remorque, le câble de sécurité, les feux et les pneumatiques.',
-        'Une remorque modifie le comportement, les distances de freinage et les manœuvres ; prends le temps de t’entraîner en lieu sûr.',
-        'La catégorie de permis nécessaire dépend des masses réglementaires de l’ensemble.'
+      { heading: 'Démarrer et s’insérer dans la circulation', body: 'Quitter un stationnement ou une propriété privée est une manœuvre qui oblige à observer tout l’environnement. Les autres usagers déjà sur la chaussée conservent la priorité lorsque la règle l’impose.', points: [
+        'Avant de démarrer, observe l’avant, l’arrière, les côtés et les éventuels usagers masqués.',
+        'Contrôle les rétroviseurs puis l’angle mort du côté où tu vas te déplacer.',
+        'Signale ton intention suffisamment tôt, mais ne considère jamais le clignotant comme une priorité.',
+        'Cède le passage aux véhicules, cyclistes et piétons qui circulent sur la voie que tu rejoins.',
+        'Avance progressivement et sois prêt à t’arrêter si un usager apparaît.',
+        'Ne recule jamais sans contrôle direct de l’environnement ; les capteurs et caméras ne remplacent pas l’observation.'
       ]},
-      { heading: 'Ouverture des portières et sortie du véhicule', body: 'Un occupant peut surprendre un cycliste ou un deux-roues en ouvrant brusquement une portière. La sécurité doit être vérifiée avant toute sortie.', points: [
-        'Contrôle le rétroviseur et l’angle mort avant d’ouvrir.',
-        'Ouvre progressivement et vérifie l’arrivée d’un vélo, d’une moto ou d’un piéton.',
-        'Fais sortir les passagers du côté le plus sûr lorsque la situation le permet.',
-        'Ne laisse pas une portière ouverte sur la chaussée ou une piste cyclable.',
-        'Avant de repartir, vérifie que toutes les portières sont correctement fermées.'
+      { heading: 'Manœuvrer et stationner', body: 'Les manœuvres doivent être lentes, lisibles et constamment contrôlées. La visibilité peut être réduite par les montants, les véhicules voisins ou les obstacles bas.', points: [
+        'Pour reculer, vérifie l’arrière et les côtés, tourne la tête lorsque nécessaire et progresse à très faible vitesse.',
+        'Interromps la manœuvre si un piéton, un enfant, un vélo ou un autre véhicule apparaît.',
+        'Pour stationner, choisis un emplacement autorisé qui ne gêne pas la circulation, les accès, les trottoirs ni les pistes cyclables.',
+        'Immobilise le véhicule avec le frein de stationnement et une position de boîte adaptée aux recommandations du constructeur.',
+        'En pente, prends les précautions nécessaires pour empêcher tout déplacement involontaire du véhicule.',
+        'Avant de quitter un emplacement, contrôle les abords et ne sors pas brusquement sur la chaussée.'
       ]},
-      { heading: 'Panne, accident et constat', body: 'Après un incident, protège les personnes avant de t’occuper du véhicule ou des formalités. La collecte d’informations ne doit jamais augmenter le danger.', points: [
-        'Mets les feux de détresse et place-toi en sécurité.',
-        'En cas de victime ou de danger, alerte les secours avant de remplir un constat.',
-        'Échange les informations utiles avec les personnes concernées et les témoins, sans reconnaître une responsabilité à chaud.',
-        'Prends des photos uniquement depuis un endroit sûr et sans gêner les secours.',
-        'Un constat amiable sert à décrire les faits et circonstances ; remplis-le lisiblement et vérifie les informations avant signature.',
-        'En cas de désaccord, reste factuel et demande conseil à ton assureur.'
+      { heading: 'Transporter et protéger les passagers', body: 'Le conducteur doit s’assurer que les occupants sont transportés dans des conditions conformes et que les objets ne deviennent pas dangereux pendant le trajet.', points: [
+        'Chaque passager doit utiliser la ceinture à une place qui en est équipée, même pour un trajet court.',
+        'Installe les enfants dans un dispositif de retenue adapté à leur morphologie et conforme aux règles applicables.',
+        'Respecte les limites de places assises et ne transporte pas de passager dans un espace non prévu à cet effet.',
+        'Range les objets de façon à ce qu’ils ne puissent pas se déplacer dans l’habitacle.',
+        'Ne laisse pas un passager gêner le conducteur, masquer la visibilité ou manipuler les commandes.',
+        'Vérifie les conditions de désactivation de l’airbag avant d’installer un siège enfant dos à la route à l’avant.'
       ]},
-      { heading: 'Règles locales, stationnement et partage de l’espace', body: 'Les villes peuvent organiser les déplacements au moyen de zones 30, zones de rencontre, aires piétonnes, voies réservées et restrictions temporaires.', points: [
-        'Lis les panneaux d’entrée et de sortie de zone, ainsi que les panonceaux de durée et de catégorie.',
-        'Dans une zone de rencontre, les piétons peuvent utiliser la chaussée selon le régime réglementaire ; adapte ton allure et cède la priorité prévue.',
-        'Dans une aire piétonne, l’accès des véhicules est limité aux catégories et conditions autorisées.',
-        'Respecte les emplacements réservés, les places PMR et les zones de livraison selon leur signalisation.',
-        'Ne te fie pas à une habitude locale : la signalisation en place et la réglementation applicable commandent la situation.'
+      { heading: 'Sortir du véhicule sans danger', body: 'L’ouverture d’une porte peut surprendre un cycliste, un deux-roues ou un véhicule qui arrive. La vérification doit être faite avant chaque ouverture, même lorsque le véhicule est arrêté.', points: [
+        'Regarde dans le rétroviseur et contrôle l’angle mort avant d’ouvrir une porte.',
+        'Ouvre progressivement et vérifie une nouvelle fois l’arrivée d’un vélo, d’une moto ou d’un piéton.',
+        'Lorsque c’est possible, fais sortir les passagers du côté le plus sûr, loin de la circulation.',
+        'Ne laisse pas une porte ouverte sur la chaussée ou une piste cyclable.',
+        'Avant de t’éloigner, vérifie que le véhicule est bien immobilisé, fermé et que les enfants ou animaux ne sont pas laissés dans une situation dangereuse.',
+        'Sur une voie rapide, ne descends pas du véhicule côté circulation ; suis les consignes de sécurité propres à la situation.'
       ]}
     ],
     reminders: [
-      'Le marquage au sol est une signalisation à part entière.',
-      'Travaux : signalisation temporaire et agents à respecter.',
-      'Passage à niveau : ne jamais s’engager sans pouvoir dégager entièrement.',
-      'Chargement : masse, dimensions, visibilité et arrimage.',
-      'Après un accident : sécurité et secours avant les formalités.'
+      'Règle ton siège, tes rétroviseurs et ton appuie-tête avant de démarrer.',
+      'Contrôle les angles morts avant chaque changement de direction ou sortie de stationnement.',
+      'Le clignotant indique une intention ; il ne donne pas la priorité.',
+      'Les capteurs et caméras sont des aides, jamais des remplaçants du contrôle visuel.',
+      'Avant d’ouvrir une porte, vérifie l’arrivée des cyclistes et des autres usagers.'
     ],
-    source: 'Code de la route sur Légifrance : https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/ ; Service-Public : https://www.service-public.fr/'
+    source: 'Code de la route sur Légifrance : https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/ ; Sécurité routière : https://www.securite-routiere.gouv.fr/'
   }
 ];

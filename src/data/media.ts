@@ -15,7 +15,7 @@ export const mediaScenes:LearningScene[]=[
 {id:'vehicle-check',title:'Contrôles du véhicule',theme:'mecanique',src:'/scenes/vehicle-check.svg',alt:'Vue schématique d’une voiture et de ses quatre roues avec repères de contrôle.',description:'Vérifier notamment pneus, feux, niveaux et essuie-glaces avant un trajet.'},
 {id:'seatbelt-cargo',title:'Ceintures et bagages',theme:'securite',src:'/scenes/seatbelt-cargo.svg',alt:'Habitacle vu du dessus montrant des ceintures et un bagage.',description:'Attacher les passagers et arrimer les objets pour éviter qu’ils deviennent des projectiles.'},
 {id:'door-opening',title:'Ouvrir une portière',theme:'usagers',src:'/scenes/door-opening.svg',alt:'Voiture stationnée à côté d’un cycliste avec trajectoire de portière illustrée.',description:'Contrôler rétroviseurs et angle mort avant d’ouvrir une portière.'},
-{id:'agent',title:'Ordres d’un agent',theme:'reglementation',src:'/scenes/agent-traffic.svg',alt:'Agent réglant la circulation à un carrefour équipé de feux.',description:'Les indications de l’agent chargé de la circulation priment sur les feux et panneaux.'},
+{id:'agent',title:'Ordres d’un agent',theme:'circulation',src:'/scenes/agent-traffic.svg',alt:'Agent réglant la circulation à un carrefour équipé de feux.',description:'Les indications de l’agent chargé de la circulation priment sur les feux et panneaux.'},
 {id:'level-crossing',title:'Passage à niveau',theme:'circulation',src:'/scenes/level-crossing.svg',alt:'Voiture arrêtée devant un passage à niveau dont les feux rouges clignotent.',description:'Arrête-toi aux feux rouges et ne t’engage que si tu peux dégager complètement la voie ferrée.'},
 {id:'fog',title:'Brouillard et visibilité',theme:'route',src:'/scenes/fog.svg',alt:'Voiture circulant dans une nappe de brouillard dense.',description:'Réduis ta vitesse et adapte tes feux à la visibilité réelle.'},
 {id:'fatigue',title:'Fatigue au volant',theme:'conducteur',src:'/scenes/fatigue.svg',alt:'Conducteur fatigué au volant, signalé par un pictogramme d’alerte.',description:'Les signes de fatigue imposent de faire une pause dans un endroit sécurisé.'},
@@ -26,12 +26,12 @@ circulation:['priority','stop','traffic-lights','roundabout','level-crossing'],
 conducteur:['fatigue','wet-road'],
 route:['wet-road','fog','motorway','tunnel','breakdown'],
 usagers:['pedestrians','cyclists','blind-spots','door-opening'],
-reglementation:['agent'],
+'notions-diverses':['agent'],
 'premiers-secours':['accident'],
 mecanique:['vehicle-check'],
 securite:['child-seat','seatbelt-cargo'],
 environnement:['motorway','wet-road'],
-divers:['seatbelt-cargo','door-opening']
+'prendre-quitter-vehicule':['seatbelt-cargo','door-opening']
 };
 export const videoLessons=[
 {id:'ZQp1l0HwkHI',title:'Les priorités à droite',theme:'Circulation',type:'Cours vidéo',description:'Un enseignant explique comment repérer et gérer les priorités à droite.',source:'Mon auto-école à la maison · 2020'},

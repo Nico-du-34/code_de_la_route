@@ -66,7 +66,7 @@ export function normalizeProgress(value: unknown): Progress {
       ? Array.from(new Set(data.mastered.filter((x): x is string => typeof x === 'string')))
       : [],
     studiedLessons: Array.isArray(data.studiedLessons)
-      ? Array.from(new Set(data.studiedLessons.filter((x): x is string => typeof x === 'string')))
+      ? Array.from(new Set(data.studiedLessons.filter((x): x is string => typeof x === 'string').map((x) => x === 'reglementation' ? 'notions-diverses' : x === 'divers' ? 'prendre-quitter-vehicule' : x)))
       : [],
     history: Array.isArray(data.history)
       ? data.history
