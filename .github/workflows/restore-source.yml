@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/source-archive/**"
+      - ".github/source-archive/restore.txt"
 
 permissions:
   contents: write
@@ -15,31 +15,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Restore Next.js project
         shell: bash
         run: |
           set -euo pipefail
           cat .github/source-archive/part-* | base64 --decode | tar -xJf - --strip-components=1
           rm -rf .github/source-archive
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-
       - name: Type check
         run: npm run typecheck
-
       - name: Lint
         run: npm run lint
-
       - name: Production build
         run: npm run build
-
       - name: Commit restored application
         run: |
           git config user.name "github-actions[bot]"
