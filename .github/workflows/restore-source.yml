@@ -35,6 +35,7 @@ jobs:
             { ignores: ['.next/**', 'out/**', 'build/**', 'next-env.d.ts'] },
           ];
           EOF
+          sed -i "s/import {BookOpen,/import {type LucideIcon,BookOpen,/; s/icon:any/icon:LucideIcon/" src/app/page.tsx
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
