@@ -1,1 +1,1 @@
-Relancer la restauration avec la configuration ESLint compatible.
+Relancer la restauration avec le type LucideIcon pour la navigation.
