@@ -1,5 +1,6 @@
-export type QuestionMedia = { src:string; alt:string; caption:string };
-const visual=(src:string,alt:string,caption:string):QuestionMedia=>({src,alt,caption});
+export type QuestionMedia = { src:string; alt:string; caption:string; kind?:'image'|'animation' };
+const visual=(src:string,alt:string,caption:string):QuestionMedia=>({src,alt,caption,kind:'image'});
+const animated=(src:string,alt:string,caption:string):QuestionMedia=>({src,alt,caption,kind:'animation'});
 export const questionMedia:Record<string,QuestionMedia>={
 q01:visual('/scenes/traffic-lights.svg','Carrefour avec feu tricolore.','Observe le feu, mais vérifie aussi que tu peux franchir le carrefour sans le bloquer.'),
 q02:visual('/scenes/intersection-priority.svg','Intersection sans signalisation avec deux véhicules.','Analyse la position des véhicules : la règle générale est de céder à celui qui vient de droite.'),
@@ -22,15 +23,15 @@ q80:visual('/scenes/door-opening.svg','Cycliste passant près d’une voiture st
 q101:visual('/scenes/agent-traffic.svg','Agent réglant la circulation devant un feu vert.','L’agent chargé de la circulation prime sur la signalisation lumineuse.'),
 q102:visual('/scenes/stop.svg','Voiture approchant un panneau STOP.','Immobilise-toi à la limite de la chaussée abordée si aucune ligne d’arrêt n’est matérialisée.'),
 q103:visual('/scenes/traffic-lights.svg','Carrefour à feux avec une file de véhicules.','Un feu vert ne permet pas de bloquer l’intersection.'),
-q104:visual('/scenes/roundabout.svg','Vue de dessus d’un carrefour à sens giratoire.','À l’entrée, respecte le cédez-le-passage et contrôle les véhicules déjà engagés.'),
+q104:animated('/scenes/video-roundabout.svg','Séquence animée d’un carrefour à sens giratoire.','Observe les véhicules déjà engagés avant de t’insérer.'),
 q105:visual('/scenes/cyclist-overtaking.svg','Voiture et cycliste circulant côte à côte.','Avant de tourner à droite, vérifie qu’aucun cycliste ne se trouve sur ta droite.'),
 q107:visual('/scenes/motorway.svg','Voitures et voies d’autoroute.','Après le dépassement, replace-toi sur la voie la plus à droite disponible.'),
 q110:visual('/scenes/cyclist-overtaking.svg','Route à double sens et véhicule en dépassement.','Sans visibilité suffisante, renonce au dépassement.'),
-q114:visual('/scenes/fatigue.svg','Conducteur présentant des signes de fatigue.','La fatigue diminue la vigilance : fais une pause dans un lieu sûr.'),
-q121:visual('/scenes/fog.svg','Route dans le brouillard avec visibilité réduite.','Lorsque la visibilité passe sous 50 m, la vitesse maximale générale est de 50 km/h.'),
+q114:animated('/scenes/video-fatigue.svg','Séquence animée en vue conducteur.','Une trajectoire qui devient irrégulière peut signaler une baisse de vigilance.'),
+q121:animated('/scenes/video-fog.svg','Séquence animée où le brouillard s’épaissit.','Adapte ton allure à la distance réellement visible.'),
 q128:visual('/scenes/wet-road.svg','Véhicule sur chaussée mouillée.','En cas d’aquaplanage, évite le freinage et les mouvements brusques.'),
 q129:visual('/scenes/breakdown.svg','Véhicule en panne sur la bande d’arrêt d’urgence.','En panne, rejoins la zone de sécurité et mets les occupants à l’abri derrière la glissière si possible.'),
-q131:visual('/scenes/pedestrian-crossing.svg','Piéton attendant pour traverser.','Cède le passage au piéton qui manifeste clairement son intention de traverser.'),
+q131:animated('/scenes/video-pedestrian.svg','Séquence animée d’un piéton qui traverse.','Anticipe la traversée et arrête-toi avant le passage.'),
 q133:visual('/scenes/cyclist-overtaking.svg','Cycliste placé à droite d’une voiture.','Contrôle le rétroviseur droit et l’angle mort avant de tourner.'),
 q134:visual('/scenes/door-opening.svg','Portière de voiture et cycliste.','Contrôle avant d’ouvrir, y compris du côté circulation.'),
 q135:visual('/scenes/truck-blind-spots.svg','Poids lourd avec zones d’angles morts.','Évite les angles morts d’un poids lourd, particulièrement à droite lorsqu’il tourne.'),

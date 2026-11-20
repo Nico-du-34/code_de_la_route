@@ -1,4 +1,5 @@
 import type { Question } from '@/data/questions';
+import { questionMedia } from '@/data/question-media';
 
 export function shuffle<T>(items: T[]): T[] {
   const copy = [...items];
@@ -19,10 +20,10 @@ export function isCorrect(question: Question, selected: number[]): boolean {
 
 /** Quotas de référence publiés par Ornikar pour une série de 40 questions. */
 export const EXAM_BLUEPRINT = [
-  { theme: 'conducteur', count: 10 },
-  { theme: 'usagers', count: 5 },
-  { theme: 'circulation', count: 4 },
-  { theme: 'route', count: 4 },
+  { theme: 'conducteur', count: 10, animationCount: 1 },
+  { theme: 'usagers', count: 5, animationCount: 1 },
+  { theme: 'circulation', count: 4, animationCount: 1 },
+  { theme: 'route', count: 4, animationCount: 1 },
   { theme: 'mecanique', count: 4 },
   { theme: 'notions-diverses', count: 3 },
   { theme: 'prendre-quitter-vehicule', count: 3 },
@@ -37,11 +38,15 @@ export function makeExam(pool: Question[], count = 40): Question[] {
   if (count === 40) {
     const selected: Question[] = [];
     for (const quota of EXAM_BLUEPRINT) {
-      const available = shuffle(unique.filter((question) => question.theme === quota.theme));
-      if (available.length < quota.count) {
-        throw new Error(`Banque insuffisante pour « ${quota.theme} » : ${available.length}/${quota.count}.`);
+      const available = unique.filter((question) => question.theme === quota.theme);
+      const animated = shuffle(available.filter((question) => questionMedia[question.id]?.kind === 'animation'));
+      const staticQuestions = shuffle(available.filter((question) => questionMedia[question.id]?.kind !== 'animation'));
+      const animationCount = 'animationCount' in quota ? quota.animationCount : 0;
+      const normalCount = quota.count - animationCount;
+      if (animated.length < animationCount || staticQuestions.length < normalCount) {
+        throw new Error(`Banque ou médias insuffisants pour « ${quota.theme} ».`);
       }
-      selected.push(...available.slice(0, quota.count));
+      selected.push(...animated.slice(0, animationCount), ...staticQuestions.slice(0, normalCount));
     }
     return shuffle(selected);
   }

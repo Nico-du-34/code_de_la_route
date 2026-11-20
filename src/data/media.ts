@@ -21,6 +21,12 @@ export const mediaScenes:LearningScene[]=[
 {id:'fatigue',title:'Fatigue au volant',theme:'conducteur',src:'/scenes/fatigue.svg',alt:'Conducteur fatigué au volant, signalé par un pictogramme d’alerte.',description:'Les signes de fatigue imposent de faire une pause dans un endroit sécurisé.'},
 {id:'breakdown',title:'Panne sur autoroute',theme:'route',src:'/scenes/breakdown.svg',alt:'Véhicule en panne sur la bande d’arrêt d’urgence d’une autoroute.',description:'Mets les occupants à l’abri derrière la glissière et respecte les consignes de sécurité.'}
 ];
+export const animatedScenes=[
+{id:'motion-roundabout',title:'Observation d’un carrefour à sens giratoire',theme:'circulation',src:'/scenes/video-roundabout.svg',alt:'Séquence animée montrant un véhicule déjà engagé dans un giratoire et un autre qui approche.',description:'Observe les véhicules déjà engagés et le marquage avant de t’insérer.'},
+{id:'motion-pedestrian',title:'Observation d’un passage piéton',theme:'usagers',src:'/scenes/video-pedestrian.svg',alt:'Séquence animée montrant une voiture qui ralentit pour laisser traverser un piéton.',description:'Repère l’intention de traverser et la distance nécessaire pour t’arrêter.'},
+{id:'motion-fatigue',title:'Trajectoire et fatigue',theme:'conducteur',src:'/scenes/video-fatigue.svg',alt:'Séquence animée en vue conducteur montrant une trajectoire qui devient irrégulière.',description:'Une perte de régularité de la trajectoire peut révéler une baisse de vigilance.'},
+{id:'motion-fog',title:'Brouillard qui s’épaissit',theme:'route',src:'/scenes/video-fog.svg',alt:'Séquence animée montrant une visibilité qui diminue progressivement sur la route.',description:'Adapte ton allure à la distance réellement visible et garde une marge de sécurité.'}
+];
 export const lessonMedia:Record<string,string[]> = {
 circulation:['priority','stop','traffic-lights','roundabout','level-crossing'],
 conducteur:['fatigue','wet-road'],
@@ -34,12 +40,12 @@ environnement:['motorway','wet-road'],
 'prendre-quitter-vehicule':['seatbelt-cargo','door-opening']
 };
 export const videoLessons=[
-{id:'ZQp1l0HwkHI',title:'Les priorités à droite',theme:'Circulation',type:'Cours vidéo',description:'Un enseignant explique comment repérer et gérer les priorités à droite.',source:'Mon auto-école à la maison · 2020'},
-{id:'lSgGXttw-EE',title:'Test : les priorités à droite',theme:'Circulation',type:'Quiz vidéo',description:'Mets en pratique les règles de priorité vues dans le cours.',source:'Mon auto-école à la maison · 2020'},
-{id:'6Anfbqj9xxQ',title:'Les intersections et les feux',theme:'Circulation',type:'Cours vidéo',description:'Rappels sur les intersections, les feux et les priorités.',source:'Mon auto-école à la maison · 2020'},
-{id:'1J7_6Ped0Vc',title:'Test : les feux',theme:'Circulation',type:'Quiz vidéo',description:'Vérifie que tu sais lire les différents signaux lumineux.',source:'Mon auto-école à la maison · 2020'},
-{id:'PhQVmGF4Pts',title:'Test : la distance de freinage',theme:'Sécurité',type:'Quiz vidéo',description:'Révise la différence entre distance de réaction, de freinage et d’arrêt.',source:'Mon auto-école à la maison · 2020'},
-{id:'8rgqFc9mjAA',title:'Test : le temps de réaction',theme:'Conducteur',type:'Quiz vidéo',description:'Comprends les conséquences d’un temps de réaction trop long.',source:'Mon auto-école à la maison · 2020'}
+{id:'KNt4a8tQP0o',title:'Entraînement : circulation routière',theme:'Circulation',type:'Série vidéo',description:'20 questions d’entraînement consacrées à la circulation, avec correction après chaque question.',source:'digiSchool Code · 30 janvier 2019 · ressource d’archive'},
+{id:'cC6cjKNfx-8',title:'Entraînement : le conducteur',theme:'Conducteur',type:'Série vidéo',description:'20 questions sur la vigilance, le comportement et les capacités du conducteur.',source:'digiSchool Code · 28 janvier 2019 · ressource d’archive'},
+{id:'iqDpKHtJcps',title:'Entraînement : la route',theme:'La route',type:'Série vidéo',description:'Une série de 20 questions pour réviser les situations liées à la route.',source:'digiSchool Code · 28 janvier 2019 · ressource d’archive'},
+{id:'wUftgqGNVu8',title:'Entraînement : l’environnement',theme:'Environnement',type:'Série vidéo',description:'20 questions autour de la conduite responsable et de l’environnement.',source:'digiSchool Code · 28 janvier 2019 · ressource d’archive'},
+{id:'231zVAtnqeU',title:'Les questions pièges du code',theme:'Multi-thèmes',type:'Replay vidéo',description:'Un replay de questions commentées proposé publiquement par Ornikar.',source:'Ornikar · replay public'},
+{id:'1dZFEG-C34U',title:'40 questions en conditions d’examen',theme:'Examen',type:'Examen vidéo',description:'Un entraînement vidéo complet sur une série de 40 questions.',source:'Ornikar · replay public'}
 ];
 export const officialResources=[
 {title:'Je repasse le code — module officiel',description:'80 questions issues de la base officielle, en séries de 10 ou 40, avec photos et vidéos.',url:'https://www.securite-routiere.gouv.fr/les-medias/nos-quiz/je-repasse-le-code',label:'Lancer le module officiel'},

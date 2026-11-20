@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="t d"><title id="t">Baisse de vigilance au volant</title><desc id="d">Séquence animée pédagogique en vue conducteur : la trajectoire devient progressivement irrégulière, signe qu’une pause est nécessaire.</desc><defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dcebf2"/><stop offset="1" stop-color="#f7fafb"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#15202b" flood-opacity=".22"/></filter></defs><rect width="1000" height="560" rx="28" fill="url(#sky)"/><g font-family="Arial,Helvetica,sans-serif">
+<rect width="1000" height="560" fill="#d9e6ec"/>
+<rect x="0" y="330" width="1000" height="230" fill="#1f2937"/>
+<path d="M290 0 L710 0 L960 365 L40 365 Z" fill="#6b7d82"/>
+<path d="M490 0 L510 0 L545 365 L455 365 Z" fill="#e5e7eb" opacity=".9"/>
+<path d="M360 0 L370 0 L255 365 L230 365 Z M630 0 L640 0 L770 365 L745 365 Z" stroke="#f8fafc" stroke-width="8" stroke-dasharray="26 23" fill="none">
+ <animate attributeName="stroke-dashoffset" values="0;98" dur="2s" repeatCount="indefinite"/>
+</path>
+<g><path d="M420 370 Q500 295 580 370 L680 540 H320 Z" fill="#111827" stroke="#374151" stroke-width="8"/><circle cx="500" cy="468" r="67" fill="none" stroke="#9ca3af" stroke-width="15"/><circle cx="500" cy="468" r="18" fill="#64748b"/>
+<animateTransform attributeName="transform" type="rotate" values="-2 500 450;2 500 450;-1 500 450;-2 500 450" dur="4s" repeatCount="indefinite"/></g>
+<rect x="65" y="65" width="260" height="56" rx="15" fill="#fff" opacity=".93"/><text x="195" y="101" font-size="22" font-weight="700" fill="#b91c1c" text-anchor="middle">Vigilance en baisse</text>
+<path d="M780 70 L820 125 L740 125 Z" fill="#fff" stroke="#dc2626" stroke-width="8"/><text x="780" y="115" font-size="38" font-weight="900" fill="#dc2626" text-anchor="middle">!</text>
+</g></svg>

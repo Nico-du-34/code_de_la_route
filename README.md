@@ -53,7 +53,7 @@ Sources de référence :
 - [Sécurité routière — réglementation des jeunes conducteurs](https://validation.securite-routiere.gouv.fr/reglementation-liee-lusager/reglementation-pour-les-jeunes-conducteurs)
 - [Service-Public — preuve de l'assurance automobile](https://www.service-public.fr/particuliers/vosdroits/F1362)
 
-Les questions de cette application sont **originales et pédagogiques** : elles ne reproduisent pas la banque officielle ETG. Les panneaux et schémas de situations sont des illustrations originales simplifiées, pas des prises de vue d'examen ni des planches réglementaires officielles. Les vidéos intégrées sont hébergées par YouTube et sélectionnées pour leur intérêt pédagogique ; certaines datent de 2020. Le module officiel « Je repasse le code » est le support recommandé pour s'exercer sur les photos et vidéos de la Sécurité routière. L'application aide à apprendre et à s'entraîner ; elle ne garantit pas la réussite à l'examen.
+Les questions de cette application sont **originales et pédagogiques** : elles ne reproduisent pas la banque officielle ETG. Les panneaux et schémas de situations sont des illustrations originales simplifiées, pas des prises de vue d'examen ni des planches réglementaires officielles. Les vidéos intégrées sont hébergées par YouTube et sélectionnées pour leur intérêt pédagogique ; certaines datent de 2019. Les animations de questions sont des créations vectorielles pédagogiques et ne sont pas des prises de vue réelles de l’ETG. Le module officiel « Je repasse le code » est le support recommandé pour s'exercer sur les photos et vidéos de la Sécurité routière. L'application aide à apprendre et à s'entraîner ; elle ne garantit pas la réussite à l'examen.
 
 ## Données personnelles
 
