@@ -29,7 +29,7 @@ npm run build
 - **62 sections de cours** structurées avec explications, règles pratiques, exemples de vigilance et rappels.
 - **180 questions originales** à choix simple ou multiple, réparties sur les dix thèmes.
 - **64 fiches de signalisation** schématiques, classées par famille avec recherche et filtres.
-- **16 schémas de situations routières originaux** (priorités, STOP, feux, piétons, cyclistes, angles morts, autoroute, pluie, tunnel, secours, sièges enfants, véhicule, chargement et ouverture de portière).
+- **20 schémas de situations routières originaux** (priorités, STOP, feux, piétons, cyclistes, angles morts, autoroute, pluie, tunnel, secours, sièges enfants, véhicule, chargement et ouverture de portière).
 - **Visuels intégrés aux questions** pour illustrer les situations et guider l'observation.
 - **6 vidéos pédagogiques intégrées** depuis la chaîne YouTube « Mon auto-école à la maison », avec indication de leur date de publication.
 - Accès direct au module officiel « Je repasse le code » de la Sécurité routière, qui utilise des photos et vidéos de la base officielle.
