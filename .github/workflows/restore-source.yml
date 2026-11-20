@@ -1,0 +1,50 @@
+name: Restore and verify Code app
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/source-archive/**"
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Restore Next.js project
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .github/source-archive/part-* | base64 --decode | tar -xJf - --strip-components=1
+          rm -rf .github/source-archive
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Production build
+        run: npm run build
+
+      - name: Commit restored application
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Ajouter l'application Next.js Code complète"
+          git push
