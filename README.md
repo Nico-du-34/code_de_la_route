@@ -1,8 +1,8 @@
 # Code — Révision du permis B
 
-Application personnelle Next.js 15 / React 19 / TypeScript, mobile-first et installable en PWA.
+Application personnelle de révision du code de la route (France), construite avec Next.js 15, React 19 et TypeScript. Interface minimaliste, mobile-first et installable en PWA.
 
-## Démarrer
+## Démarrage
 
 Prérequis : Node.js 20.9+ (Node 22 recommandé).
 
@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Ouvrir http://localhost:3000.
+Puis ouvrir http://localhost:3000.
 
 ## Vérifications
 
@@ -23,26 +23,30 @@ npm run build
 
 ## Fonctionnalités
 
-- Tableau de bord personnel et indicateurs de progression.
-- 10 cours thématiques avec chapitres, points essentiels et rappels.
-- 80 questions pédagogiques originales avec réponses simples ou multiples.
+- Tableau de bord de progression et indicateurs personnels.
+- 10 thèmes de cours, avec chapitres, points essentiels et rappels.
+- 80 questions pédagogiques originales (réponses simples et multiples).
 - Entraînement aléatoire, par thème, erreurs, favoris et questions non maîtrisées.
-- Examens blancs de 40 questions distinctes, seuil indicatif 35/40.
-- Correction complète et historique des résultats.
-- Catalogue de 24 panneaux schématiques, filtres et recherche.
+- Examens blancs de 40 questions distinctes, seuil indicatif de réussite de 35/40.
+- Correction complète après examen et historique des résultats.
+- Catalogue pédagogique de 24 panneaux classés par catégorie, avec recherche.
 - Statistiques locales, objectif quotidien, export et import JSON.
-- PWA avec service worker et cache hors connexion des ressources déjà visitées.
+- Service worker et manifeste PWA, avec cache des ressources visitées.
 
-## Données
+## Données personnelles
 
-Aucun compte, serveur utilisateur, abonnement ou synchronisation cloud. La progression est stockée dans `localStorage` (`code-route-progress-v1`). Elle peut être effacée par le navigateur. Exporter régulièrement sa sauvegarde JSON.
+Aucun compte, API privée, abonnement ou backend utilisateur. La progression est stockée dans `localStorage` sous `code-route-progress-v1`. Elle peut être effacée par le navigateur ou lors du nettoyage de ses données. Utiliser régulièrement l'export JSON des paramètres pour conserver une sauvegarde.
 
-## iPhone
+## Installer sur iPhone
 
-Déployer en HTTPS, ouvrir dans Safari, toucher Partager puis « Sur l’écran d’accueil ».
+Déployer le site en HTTPS, ouvrir l'URL dans Safari, toucher **Partager**, puis **Sur l'écran d'accueil**. Sur ordinateur, utiliser l'option d'installation proposée par le navigateur compatible.
 
-## Limites pédagogiques et sources
+## Périmètre pédagogique et sources
 
-Les questions et cours sont originaux et ne reproduisent pas la banque officielle de l'ETG. Les panneaux sont des schémas non réglementaires. Les règles peuvent évoluer : vérifier les informations sur [Sécurité routière](https://www.securite-routiere.gouv.fr/), [Légifrance](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/) et [Service-Public.fr](https://www.service-public.fr/).
+Les 80 questions et les cours sont du contenu pédagogique original. Ils ne constituent pas une reproduction de la banque officielle ETG. Les panneaux sont des schémas pédagogiques, pas des planches réglementaires officielles. Les textes et règles peuvent évoluer : vérifier les points réglementaires auprès de :
+
+- [Sécurité routière](https://www.securite-routiere.gouv.fr/)
+- [Légifrance — Code de la route](https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006074228/)
+- [Service-Public.fr](https://www.service-public.fr/)
 
 Cette application est un outil personnel d'entraînement et ne garantit pas la réussite à l'examen.

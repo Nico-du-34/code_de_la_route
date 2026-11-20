@@ -1,0 +1,27 @@
+export type RoadSign={id:string;name:string;meaning:string;category:'Danger'|'Interdiction'|'Obligation'|'Indication'|'Priorité'|'Direction';shape:string;symbol:string;note:string};
+export const roadSigns:RoadSign[]=[
+{id:'a1',name:'Virage à droite',meaning:'Annonce un virage à droite présentant un danger.',category:'Danger',shape:'triangle',symbol:'↱',note:'Réduis ta vitesse avant le virage et adapte ta trajectoire.'},
+{id:'a2',name:'Virage à gauche',meaning:'Annonce un virage à gauche présentant un danger.',category:'Danger',shape:'triangle',symbol:'↰',note:'Reste dans ta voie et évite tout freinage brusque.'},
+{id:'a3',name:'Succession de virages',meaning:'Annonce plusieurs virages successifs.',category:'Danger',shape:'triangle',symbol:'〽',note:'La vitesse doit être adaptée à l’ensemble de la séquence.'},
+{id:'a4',name:'Chaussée glissante',meaning:'Annonce une chaussée susceptible d’être glissante.',category:'Danger',shape:'triangle',symbol:'〰',note:'Évite les gestes brusques et augmente les distances.'},
+{id:'a5',name:'Passage pour piétons',meaning:'Annonce un passage destiné à la traversée des piétons.',category:'Danger',shape:'triangle',symbol:'🚶',note:'Ralentis et prépare-toi à céder le passage.'},
+{id:'a6',name:'Débouché de cyclistes',meaning:'Annonce un endroit où des cyclistes peuvent déboucher.',category:'Danger',shape:'triangle',symbol:'🚴',note:'Surveille les abords et les angles morts.'},
+{id:'b1',name:'STOP',meaning:'Arrêt obligatoire à la limite de la chaussée abordée, puis céder le passage.',category:'Priorité',shape:'octagon',symbol:'STOP',note:'L’arrêt doit être complet, même si aucun véhicule n’arrive.'},
+{id:'b2',name:'Cédez le passage',meaning:'Obligation de céder le passage aux usagers de la route prioritaire.',category:'Priorité',shape:'triangle-down',symbol:'▽',note:'L’arrêt n’est pas systématique si la voie est libre.'},
+{id:'b3',name:'Route prioritaire',meaning:'Indique que la route est prioritaire aux intersections jusqu’à indication contraire.',category:'Priorité',shape:'diamond',symbol:'◆',note:'Reste prudent : la priorité ne dispense jamais d’éviter un accident.'},
+{id:'b4',name:'Fin de route prioritaire',meaning:'Indique la fin du régime de route prioritaire.',category:'Priorité',shape:'diamond',symbol:'◇',note:'À l’intersection suivante, applique la signalisation présente ou la règle générale.'},
+{id:'c1',name:'Sens interdit',meaning:'Accès interdit aux véhicules dans ce sens.',category:'Interdiction',shape:'circle',symbol:'━',note:'Ne t’engage pas, même pour quelques mètres.'},
+{id:'c2',name:'Limitation à 50 km/h',meaning:'Vitesse maximale autorisée : 50 km/h.',category:'Interdiction',shape:'circle',symbol:'50',note:'La vitesse doit être encore réduite si les circonstances l’exigent.'},
+{id:'c3',name:'Interdiction de dépasser',meaning:'Interdit le dépassement des véhicules à moteur visés par la réglementation.',category:'Interdiction',shape:'circle',symbol:'⇄',note:'Respecte la fin d’interdiction et les éventuelles exceptions.'},
+{id:'c4',name:'Stationnement interdit',meaning:'Interdit le stationnement selon les conditions indiquées.',category:'Interdiction',shape:'circle',symbol:'P̸',note:'Vérifie les panonceaux et les règles locales.'},
+{id:'d1',name:'Obligation de tourner à droite',meaning:'Impose la direction indiquée à la prochaine intersection.',category:'Obligation',shape:'circle-blue',symbol:'→',note:'Place-toi à l’avance dans la voie adaptée.'},
+{id:'d2',name:'Piste ou bande cyclable obligatoire',meaning:'Indique une voie réservée aux cycles selon le panneau.',category:'Obligation',shape:'circle-blue',symbol:'🚲',note:'Ne l’emprunte pas avec une voiture.'},
+{id:'d3',name:'Vitesse minimale obligatoire',meaning:'Impose de circuler au moins à la vitesse indiquée lorsque les conditions le permettent.',category:'Obligation',shape:'circle-blue',symbol:'30',note:'Cette obligation cesse selon la signalisation de fin.'},
+{id:'e1',name:'Passage pour piétons',meaning:'Signale un emplacement aménagé pour la traversée des piétons.',category:'Indication',shape:'square-blue',symbol:'🚶',note:'La présence du panneau ne dispense pas de contrôler les abords.'},
+{id:'e2',name:'Parking',meaning:'Indique un emplacement de stationnement.',category:'Indication',shape:'square-blue',symbol:'P',note:'Des conditions particulières peuvent être précisées.'},
+{id:'e3',name:'Impasse',meaning:'Indique une voie sans issue pour les véhicules.',category:'Indication',shape:'square-blue',symbol:'T',note:'Anticipe la possibilité de devoir faire demi-tour.'},
+{id:'f1',name:'Entrée d’agglomération',meaning:'Signale l’entrée dans une agglomération et l’application des règles associées.',category:'Indication',shape:'rectangle',symbol:'VILLE',note:'La limitation générale en agglomération est en principe de 50 km/h, sauf signalisation contraire.'},
+{id:'f2',name:'Fin d’agglomération',meaning:'Signale la sortie de l’agglomération.',category:'Indication',shape:'rectangle',symbol:'VILLE̸',note:'Adapte ta vitesse à la nouvelle catégorie de route et à la signalisation.'},
+{id:'g1',name:'Direction autoroute',meaning:'Indique une direction vers une autoroute.',category:'Direction',shape:'rectangle',symbol:'A',note:'Vérifie l’itinéraire et les voies avant de t’engager.'},
+{id:'g2',name:'Route à accès réglementé',meaning:'Annonce une route dont l’accès est réservé à certaines catégories d’usagers.',category:'Indication',shape:'rectangle',symbol:'🚘',note:'Lis les restrictions indiquées.'}
+];
