@@ -6,7 +6,8 @@ import {questions as baseQuestions,themes,type Question} from '@/data/questions'
 import {isCorrect,makeExam,shuffle} from '@/lib/quiz';
 import {extraQuestions} from '@/data/questions-extra';
 import {advancedQuestions} from '@/data/questions-advanced';
-const questions:Question[]=[...baseQuestions,...extraQuestions,...advancedQuestions];
+import {volumeTwoQuestions} from '@/data/questions-volume-2';
+const questions:Question[]=[...baseQuestions,...extraQuestions,...advancedQuestions,...volumeTwoQuestions];
 import {initialProgress,loadProgress,saveProgress,normalizeProgress,addDailyAnswers,localDateKey,type Progress} from '@/lib/storage';
 import {lessons} from '@/data/courses';
 import {roadSigns} from '@/data/signs';

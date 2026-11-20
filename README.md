@@ -27,7 +27,7 @@ npm run build
 
 - **10 thèmes officiels** : circulation, conducteur, route, autres usagers, notions diverses, premiers secours, prendre/quitter son véhicule, mécanique, sécurité du passager et du véhicule, environnement.
 - **62 sections de cours** structurées avec explications, règles pratiques, exemples de vigilance et rappels.
-- **180 questions originales** à choix simple ou multiple, réparties sur les dix thèmes.
+- **280 questions originales** à choix simple ou multiple, réparties sur les dix thèmes.
 - **64 fiches de signalisation** schématiques, classées par famille avec recherche et filtres.
 - **20 schémas de situations routières originaux** (priorités, STOP, feux, piétons, cyclistes, angles morts, autoroute, pluie, tunnel, secours, sièges enfants, véhicule, chargement et ouverture de portière).
 - **Visuels intégrés aux questions** pour illustrer les situations et guider l'observation.
