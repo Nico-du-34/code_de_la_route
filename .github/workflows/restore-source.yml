@@ -21,7 +21,20 @@ jobs:
           set -euo pipefail
           cat .github/source-archive/part-* | base64 --decode | tar -xJf - --strip-components=1
           rm -rf .github/source-archive
-          sed -i "s#eslint-config-next/core-web-vitals'#eslint-config-next/core-web-vitals.js'#; s#eslint-config-next/typescript'#eslint-config-next/typescript.js'#" eslint.config.mjs
+          cat > eslint.config.mjs <<'EOF'
+          import { FlatCompat } from '@eslint/eslintrc';
+          import { dirname } from 'node:path';
+          import { fileURLToPath } from 'node:url';
+
+          const compat = new FlatCompat({
+            baseDirectory: dirname(fileURLToPath(import.meta.url)),
+          });
+
+          export default [
+            ...compat.extends('next/core-web-vitals', 'next/typescript'),
+            { ignores: ['.next/**', 'out/**', 'build/**', 'next-env.d.ts'] },
+          ];
+          EOF
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
